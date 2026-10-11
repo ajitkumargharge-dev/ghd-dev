@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build step
-        run: echo "A Demo Build, ${{vars.MY_NAME}}"
+        run: echo "A Demo Build, ${{secrets.DOCKER_PASS}}"
   
   test:
     runs-on: ubuntu-latest
